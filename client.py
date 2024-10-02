@@ -5,7 +5,7 @@ import os
 import pickle
 
 class Cliente():
-    def __init__(self, host="140.10.1.87", port=7000):
+    def __init__(self, host="localhost", port=7000):
         try:
             self.sock = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
             self.sock.connect((str(host), int(port)))

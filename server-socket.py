@@ -4,7 +4,7 @@ import os
 import pickle
 
 class Servidor():
-    def __init__(self, host="140.10.0.136", port=7000):
+    def __init__(self, host="localhost", port=7000):
         self.sock = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
         self.sock.bind((str(host), int(port)))
         self.sock.listen(10)
